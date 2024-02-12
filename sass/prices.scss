@@ -1,0 +1,290 @@
+@import 'variables';
+
+.prices {
+    max-width: 1200px;
+    margin: 150px auto;
+    margin-top: 150px;
+}
+
+@mixin hidden-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px; 
+    height:300px;
+    border-radius: 50%; 
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 0px;
+    z-index: 55; 
+}
+
+.hidden-bg1 {
+    @include hidden-bg;
+    background-color: $green1;
+}
+
+.hidden-bg2 {
+    @include hidden-bg;
+    background-color: $red1;
+}
+
+.price-card {
+    border-radius: 30px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    box-shadow: 0px 0px 20px 0px rgba(49,55,67,0.1);
+    cursor: pointer;
+    transition-duration: .5s;
+
+    &__header {
+        display: flex;
+        padding: 20px 40px 0px 30px;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0;
+
+        &__title {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            & .title {
+                font-size: 45px;
+                font-weight: 500;
+                margin: 0;
+            }
+
+            & .number {
+                width:50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: $black;
+                color: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                font-weight: 600;
+                align-self: center;
+            }
+        }
+
+        &__countries {
+            display: flex;
+            flex-direction: column;
+
+            & div {
+                
+                padding: 10px 12px;
+                border-radius: 20px;
+                text-align: center;
+            }
+            & div#c1 {
+                background-color: $green1;
+            }
+            & div#c2 {
+                background-color: $blue;
+            }
+            & div#c3 {
+                background-color: $black;
+                color: $white;
+            }
+        }
+    }
+
+    &__opportunity {
+        font-size: 20px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0px 40px 0px 80px;
+        
+    }
+    &__description {
+        margin-top: 70px;
+        padding: 0px 40px 0px 50px;
+        z-index: 59;
+    }
+
+    &__footer {
+        display: flex;
+        margin-top: 100px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+        border-radius: 30px;
+        color: $white;
+        background-color: $black;
+        z-index: 56;
+
+        &__url {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            & a {
+                font-size: 20px;
+                font-weight: 600;
+                color: $white;
+                text-decoration: none;
+            }
+
+            & span {
+                font-size: 50px;
+                color: $red1;
+                margin-bottom: 10px;
+            }
+        }
+        &__price {
+            font-size: 35px;
+            font-weight: 600;
+        }
+    }
+}
+
+.sale-card {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    padding: 50px 100px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 0px rgba(49,55,67,0.1);
+    border-radius: 30px;
+    background-color: white;
+    margin-bottom: 50px;
+    transition-duration: .5s;
+
+    &__title {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 0;
+        letter-spacing: 0.1rem;
+    }
+
+    & img {
+        width: 240px;
+    }
+    &__description {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+    }
+}
+
+.sale-card:hover, #price-column2:hover {
+    background-color: $green1;
+    transition: background-color .5s ease-in-out;
+}
+
+
+@keyframes priceStr {
+    50% {
+        transform: scaleX(1.5);
+    }
+}
+
+.price-card:hover {
+    background-color: $red1;
+    transition: background-color .5s ease-in-out;
+}
+
+.price-card:hover .price-strelka {
+    animation-name: priceStr;
+    animation-duration: .6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .prices {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .price-card {
+        border-radius: 30px;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        box-shadow: 0px 0px 20px 0px rgba(49,55,67,0.1);
+        cursor: pointer;
+        transition-duration: .5s;
+    
+        &__header {
+            display: flex;
+            padding: 20px 30px 0px 20px;
+            gap: 20px;
+    
+            &__title {
+                gap: 20px;
+    
+                & .title {
+                    font-size: 35px;
+                }
+    
+                & .number {
+                    width:40px;
+                    height: 40px;
+                }
+            }
+    
+            &__countries {
+                & div {
+                    
+                    padding: 5px 9px;
+                    border-radius: 16px;
+                    text-align: center;
+                }
+            }
+        }
+    
+        &__opportunity {
+            padding: 20px 20px 30px 50px;
+            font-size: 18px;
+        }
+        &__description {
+            padding: 20px 20px 0px 20px;
+            font-size: 18px;
+        }
+    
+        &__footer {
+            display: flex;
+            margin-top: 100px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            border-radius: 30px;
+            color: $white;
+            background-color: $black;
+            z-index: 56;
+    
+            &__url {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+    
+                & a {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $white;
+                    text-decoration: none;
+                }
+    
+                & span {
+                    font-size: 50px;
+                    color: $red1;
+                    margin-bottom: 10px;
+                }
+            }
+            &__price {
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+    }
+}

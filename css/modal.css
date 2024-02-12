@@ -1,0 +1,287 @@
+.hero-img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-size: cover;
+	opacity: 0.5;
+	display: none;
+}
+.box{
+	position: relative;
+	padding: 50px 0 20px;
+}
+.container{
+	max-width: 500px;
+	position: relative;	
+}
+
+h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	line-height: 45px;
+	margin-bottom: 20px;
+	letter-spacing: 1.5px;
+	margin-top: 50px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.form-group{
+	position: relative;
+	margin-bottom:45px;
+}
+.form-control{
+	font-size: 18px;
+	font-weight: 400;
+	padding: 10px 10px 10px 5px;
+	display: block;
+	width: 100%;
+	color: rgba(32,35,66,1);
+	height: 50px;
+	border: none;
+	border-radius: 0;
+	background: transparent;
+	border-bottom: 1px solid rgba(32,35,66,.25);
+	box-shadow: none;
+}
+textarea.form-control{
+	height: 140px;
+}
+.form-control:focus{
+	outline:none;
+	box-shadow: none;
+	background: transparent;
+	color: rgba(32,35,66,1);
+}
+label{
+	color: #696B80;
+	font-size:20px;
+	font-weight:normal;
+	position:absolute;
+	pointer-events:none;
+	left:5px;
+	top:10px;
+	font-weight: 400;
+	transition:0.2s ease all;
+	-moz-transition:0.2s ease all;
+	-webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.has-value label{
+	top:-20px;
+	font-size:14px;
+	color: rgba(32,35,66,1);
+}
+.bar{ position:relative; display:block; width:100%; }
+.bar:before, .bar:after 	{
+	content:'';
+	height:2px;
+	width:0;
+	bottom:1px;
+	position:absolute;
+	background: #202342;
+	transition:0.2s ease all;
+	-moz-transition:0.2s ease all;
+	-webkit-transition:0.2s ease all;
+}
+.bar:before {left:50%;}
+.bar:after {right:50%;}
+.has-value .bar:before, .has-value .bar:after {width:50%;}
+.highlight {
+	position:absolute;
+	height:60%;
+	width:100px;
+	top:25%;
+	left:0;
+	pointer-events:none;
+	opacity:0.5;
+}
+
+.has-value .highlight {
+	-webkit-animation:inputHighlighter 0.3s ease;
+	-moz-animation:inputHighlighter 0.3s ease;
+	animation:inputHighlighter 0.3s ease;
+}
+@-webkit-keyframes inputHighlighter {
+	from { background: #5264AE; }
+	to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background: #5264AE; }
+	to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background: #5264AE; }
+	to 	{ width:0; background:transparent; }
+}
+
+.submit-btn{
+	text-align: center;
+}
+
+.submit-btn input{
+	position: relative;
+	display: inline-block;
+	font-size: 15px;
+	min-width: 220px;
+	text-align: center;
+	letter-spacing: 2.5px;
+	line-height: 18px;
+	font-weight: 700;
+	padding: 15px 30px;
+	border: 2px solid;
+	cursor: pointer;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background: rgba(0,33,71,1);
+	color: #ffffff;
+	border-color: rgba(0,33,71,1);
+}
+
+
+.wrap {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    width: 350px;
+    left: 0;
+    margin: 0 auto;
+  }
+  
+  /* select starting stylings ------------------------------*/
+  .select {
+    font-family:
+      'Roboto','Helvetica','Arial',sans-serif;
+      position: relative;
+      width: 350px;
+  }
+  
+  .select-text {
+      position: relative;
+      font-family: inherit;
+      background-color: transparent;
+      width: 350px;
+      padding: 10px 10px 10px 0;
+      font-size: 18px;
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid rgba(0,0,0, 0.12);
+  }
+  
+  /* Remove focus */
+  .select-text:focus {
+      outline: none;
+      border-bottom: 1px solid rgba(0,0,0, 0);
+  }
+  
+      /* Use custom arrow */
+  .select .select-text {
+      appearance: none;
+      -webkit-appearance:none
+  }
+  
+  .select:after {
+      position: absolute;
+      top: 18px;
+      right: 10px;
+      /* Styling the down arrow */
+      width: 0;
+      height: 0;
+      padding: 0;
+      content: '';
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid rgba(0, 0, 0, 0.12);
+      pointer-events: none;
+  }
+  
+  
+  .select-label {
+      color: rgba(0,0,0, 0.26);
+      font-size: 18px;
+      font-weight: normal;
+      position: absolute;
+      pointer-events: none;
+      left: 0;
+      top: 10px;
+      transition: 0.2s ease all;
+  }
+  
+  /* active state */
+  .select-text:focus ~ .select-label, .select-text:valid ~ .select-label {
+      color: #2F80ED;
+      top: -20px;
+      transition: 0.2s ease all;
+      font-size: 14px;
+  }
+  
+  /* BOTTOM BARS ================================= */
+  .select-bar {
+      position: relative;
+      display: block;
+      width: 350px;
+  }
+  
+  .select-bar:before, .select-bar:after {
+      content: '';
+      height: 2px;
+      width: 0;
+      bottom: 1px;
+      position: absolute;
+      background: #2F80ED;
+      transition: 0.2s ease all;
+  }
+  
+  .select-bar:before {
+      left: 50%;
+  }
+  
+  .select-bar:after {
+      right: 50%;
+  }
+  
+  /* active state */
+  .select-text:focus ~ .select-bar:before, .select-text:focus ~ .select-bar:after {
+      width: 50%;
+  }
+  
+  /* HIGHLIGHTER ================================== */
+  .select-highlight {
+      position: absolute;
+      height: 60%;
+      width: 100px;
+      top: 25%;
+      left: 0;
+      pointer-events: none;
+      opacity: 0.5;
+  }
+
+
+  .modal-feedback {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .modal__description {
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    color: #313743;
+
+  }
+
+  .modal__title {
+    color: #313743;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }

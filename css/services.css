@@ -1,0 +1,181 @@
+.card {
+  border: none;
+}
+
+.services {
+  max-width: 1200px;
+  margin: 200px auto 50px auto;
+}
+.services-title {
+  color: #313743;
+  font-size: 45px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 20px;
+}
+.services-card {
+  background-color: #fafafa;
+  margin-top: 50px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(49, 55, 67, 0.1);
+          box-shadow: 0px 0px 20px 0px rgba(49, 55, 67, 0.1);
+  max-height: 7000px;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  cursor: pointer;
+}
+.services-card__number {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+  color: #ededed;
+  background-color: #313743;
+  font-weight: 600;
+  border-radius: 50%;
+}
+.services-card__title {
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 2.5rem;
+  color: #313743;
+  padding-right: 50px;
+}
+.services-card__description {
+  color: #313743;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 10px;
+  padding-right: 50px;
+}
+.services-card__banner {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.services-card__banner__url {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.services-card__banner__url a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #313743;
+}
+.services-card__banner__url span {
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: #fb6363;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.services-card__banner__image {
+  background-color: #50b2ff;
+  border-top-left-radius: 70%;
+  margin-left: auto;
+  padding: 50px 0px 0px 50px;
+}
+.services-card__banner__image img {
+  width: 200px;
+  height: 200px;
+  -webkit-transform: translate(50px -50px);
+      -ms-transform: translate(50px -50px);
+          transform: translate(50px -50px);
+}
+.services-card:hover span {
+  -webkit-transform: scaleX(1.5);
+      -ms-transform: scaleX(1.5);
+          transform: scaleX(1.5);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#card1:hover, #card4:hover {
+  background-color: #d3ed64;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+#card3:hover {
+  background-color: #50b2ff;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+#card2:hover {
+  background-color: #fb6363;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+#card2:hover span {
+  color: #313743;
+}
+
+@media screen and (max-width: 960px) {
+  .services-card {
+    margin: 10px 5px 0px 5px;
+  }
+  .services-title {
+    font-size: 35px;
+  }
+}
+.animate-normal {
+  -webkit-animation: animateIn 1000ms ease forwards;
+          animation: animateIn 1000ms ease forwards;
+}
+
+.animate-delay {
+  -webkit-animation: animateIn 1000ms ease 300ms forwards;
+          animation: animateIn 1000ms ease 300ms forwards;
+}
+
+@-webkit-keyframes animateIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}

@@ -1,0 +1,174 @@
+@import 'variables';
+
+
+@keyframes animateAction{
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0px)
+    }
+}
+
+
+.main-section {
+    max-width: 1200px;
+    margin: 50px auto 50px auto;
+
+    .main-action {
+        margin-left: auto;
+        width: 179px;
+        height: 179px;
+        border-radius: 50%;
+        background-color: $green1;
+        transition-duration: 0.3s;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        animation-name: animateAction;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    
+        &:hover {
+            background-color: $green2;
+            transition: background-color 0.3s ease-in;
+        }
+        &__procent {
+            font-weight: 700;
+            font-size: 36px;
+            margin: 0;
+        }
+    
+        &__ckidka {
+            font-weight: 700;
+            font-size: 20px;
+            margin: 0;
+        }
+        &__description {
+            font-weight: 500;
+            font-size: 14px;
+            margin: 0;
+            padding: 0px 15px;
+        }
+    }
+    
+    .main-title {
+        margin-top: 50px;
+        animation-name: animateAction;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        &__title {
+            font-weight: 700;
+            font-size: 55px;
+            margin: 0;
+            text-align: center;
+            
+        }
+        &__description {
+            text-align: center;
+            font-weight: 500;
+            font-size: 18px;
+            margin: 0;
+            margin-top: 20px;
+            
+        }
+    
+        &__card {
+            text-align: center;
+            font-weight: 500;
+            font-size: 20px;
+            color: $red1;
+            margin: 0;
+        }
+    }
+    
+    .main-garant {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 85px;
+        animation-name: animateAction;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        
+        &__srok {
+            background-color: $black;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        &__number {
+            color: $white;
+            font-weight: 700;
+            font-size: 35px;
+            margin: 0;
+        }
+        &__day {
+            color: $white;
+            font-weight: 500;
+            font-size: 16px;
+            margin: 0;
+        }
+        &__sale {
+            color: $white;
+            font-size: 14px;
+            font-family: 'Inter',Arial,sans-serif;
+            line-height: 1.55;
+            font-weight: 500;
+            border-radius: 30px;
+            background-color: $black;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+            padding: 7px 30px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1450px) {
+    .main-section {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .main-section {
+        .main-title {
+            &__title {
+                font-weight: 700;
+                font-size: 45px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main-section {
+        .main-title {
+            &__title {
+                font-weight: 700;
+                font-size: 35px;
+                text-align: center;
+            }
+        }
+        .main-garant {
+            justify-content: space-between;
+            margin-right: 0px;
+            
+            p#hidden {
+                display: none;
+            }
+
+        }
+    }
+}

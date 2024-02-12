@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/services.css">
+  <link rel="stylesheet" href="./css/garant.css">
+  <link rel="stylesheet" href="./css/banner.css">
+  <link rel="stylesheet" href="./css/advantage.css">
+  <link rel="stylesheet" href="./css/prices.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body style="background-color: #fafafa; overflow-x: hidden;">
+  <header>
+    <nav class="nav">
+      <span class="nav__logo">
+        LOGO
+      </span>
+      <div class="stroke">
+        <ul>
+          <li><a href="#scope">Для кого</a></li>
+          <li><a href="#garant">Возможности</a></li>
+          <li><a href="#prices">Тарифы</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </div>
+      <button data-bs-target="#questionModal" data-bs-toggle="modal" class="nav__button">Ваш запрос</button>
+      <svg class="vbp-header-menu-button__svg">
+        <line x1="0" y1="50%" x2="100%" y2="50%" class="top" shape-rendering="crispEdges" />
+        <line x1="0" y1="50%" x2="100%" y2="50%" class="middle" shape-rendering="crispEdges" />
+        <line x1="0" y1="50%" x2="100%" y2="50%" class="bottom" shape-rendering="crispEdges" />
+      </svg>
+    </nav>
+  </header>
+
+  <div class="mobile-menu">
+    <div><a href="">Для кого</a></div>
+    <div><a href="">Возможности</a></div>
+    <div><a href="">Услуги</a></div>
+    <div><a href="">Visa D3</a></div>
+    <div><a href="">Тарифы</a></div>
+    <div><a href="">Контакты</a></div>
+    <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal" class="nav-button2">Получить карту</button>
+  </div>
+
+  <!-- Main section -->
+  <main class="main-section">
+    <div class="main-action">
+      <p class="main-action__procent">20%</p>
+      <p class="main-action__ckidka">Скидка</p>
+      <p class="main-action__description">При офомлении второй карты</p>
+    </div>
+    <div class="main-title" style="margin-top: 50px;">
+      <p class="main-title__title">Получите <b style="color: #d3ed64;">зарубежную</b></p>
+      <p class="main-title__title">карту не покидая РФ</p>
+      <p class="main-title__description ">Верните себе все преимущества использования</p>
+      <p class="main-title__card">Visa/Mastercard</p>
+    </div>
+
+    <div class="main-garant">
+      <div class="main-garant__srok">
+        <div class="main-garant__number">5</div>
+        <div class="main-garant__day">дней</div>
+      </div>
+      <button data-bs-target="#orderModal" data-bs-toggle="modal" class="main-garant__sale">Заказать карту</button>
+      <p id="hidden"></p>
+    </div>
+  </main>
+
+  <!-- Возможности -->
+  <div id="scope" class="services">
+    <p class="services-title">вам будут </p>
+    <p class="services-title"><b style="color: #d3ed64;">полезны</b> наши </p>
+    <p class="services-title">услуги</p>
+    <div class="row gx-lg-5" style="margin-top: 50px;">
+      <div class="col-lg-6">
+        <div class="services-card card" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" id="card1">
+          <div class="services-card__number">1</div>
+          <p class="services-card__title">Если нужно быстро оформить карту иностранного банка из России</p>
+          <p class="services-card__description">Возьмём всё на себя: подготовим и оформим все документы, подадим заявку
+            на выпуск банковской карты, получим и доставим вашу пластиковую карту по всей территории России</p>
+          <div class="services-card__banner">
+            <div class="services-card__banner__url">
+              <a href="#">
+                Хочу получить карту &nbsp;&nbsp;&nbsp;
+              </a>
+              <span>&#8594;</span>
+            </div>
+            <div class="services-card__banner__image" style="background-color: #d3ed64;">
+              <img src="./images/service1.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="services-card card" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" id="card2">
+          <div class="services-card__number">2</div>
+          <p class="services-card__title">Если нужно быстро оформить карту иностранного банка из России</p>
+          <p class="services-card__description">Возьмём всё на себя: подготовим и оформим все документы, подадим заявку
+            на выпуск банковской карты, получим и доставим вашу пластиковую карту по всей территории России</p>
+          <div class="services-card__banner">
+            <div class="services-card__banner__url">
+              <a href="#">
+                Хочу получить карту &nbsp;&nbsp;&nbsp;
+              </a>
+              <span>&#8594;</span>
+            </div>
+            <div class="services-card__banner__image" style="background-color: #fb6363;">
+              <img src="./images/service2.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="services-card card" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" id="card3">
+          <div class="services-card__number">3</div>
+          <p class="services-card__title">Если нужно быстро оформить карту иностранного банка из России</p>
+          <p class="services-card__description">Возьмём всё на себя: подготовим и оформим все документы, подадим заявку
+            на выпуск банковской карты, получим и доставим вашу пластиковую карту по всей территории России</p>
+          <div class="services-card__banner">
+            <div class="services-card__banner__url">
+              <a href="#">
+                Хочу получить карту &nbsp;&nbsp;&nbsp;
+              </a>
+              <span>&#8594;</span>
+            </div>
+            <div class="services-card__banner__image">
+              <img src="./images/service3.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="services-card card" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" id="card4">
+          <div class="services-card__number">4</div>
+          <p class="services-card__title">Если нужно быстро оформить карту иностранного банка из России</p>
+          <p class="services-card__description">Возьмём всё на себя: подготовим и оформим все документы, подадим заявку
+            на выпуск банковской карты, получим и доставим вашу пластиковую карту по всей территории России</p>
+          <div class="services-card__banner">
+            <div class="services-card__banner__url">
+              <a href="#">
+                Хочу получить карту &nbsp;&nbsp;&nbsp;
+              </a>
+              <span>&#8594;</span>
+            </div>
+            <div class="services-card__banner__image" style="background-color: #d3ed64;;">
+              <img src="./images/service2.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Гарантии -->
+  <div id="garant" class="garant">
+    <div class="row gx-5 gy-5 ">
+      <div id="firstGarant" class="col-lg-6">
+        <div class="card">
+          <div class="garant-title card">
+            <p class="garant-title__title">ОФОРМИВ КАРТУ</p>
+            <p class="garant-title__title">ВЫ <b style="color: #d3ed64;">СМОЖЕТЕ</b></p>
+            <img class="garant-title__image" src="./images/photo.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div id="secondGarant" class="col-lg-6">
+        <div class="card garant-cards">
+          <div class="garant-card">
+            <div class="garant-card__number1">1</div>
+            <div class="garant-card__title">Оплачивать иностранные товары, услуги и сервисы</div>
+            <div class="garant-card__description">С иностранной банковской картой вы сможете пользоваться всеми
+              возможностями международных платёжных систем: совершать покупки в зарубежных магазинах, оплачивать
+              заграничные приложения, подписки, сервисы и многое другое</div>
+          </div>
+
+          <div class="card garant-card">
+            <div class="garant-card__number2">2</div>
+            <div class="garant-card__title">Оплачивать иностранные товары, услуги и сервисы</div>
+            <div class="garant-card__description">С иностранной банковской картой вы сможете пользоваться всеми
+              возможностями международных платёжных систем: совершать покупки в зарубежных магазинах, оплачивать
+              заграничные приложения, подписки, сервисы и многое другое</div>
+          </div>
+
+          <div class="card garant-card">
+            <div class="garant-card__number3">3</div>
+            <div class="garant-card__title">Оплачивать иностранные товары, услуги и сервисы</div>
+            <div class="garant-card__description">С иностранной банковской картой вы сможете пользоваться всеми
+              возможностями международных платёжных систем: совершать покупки в зарубежных магазинах, оплачивать
+              заграничные приложения, подписки, сервисы и многое другое</div>
+          </div>
+
+          <div class="card garant-card">
+            <div class="garant-card__number4">4</div>
+            <div class="garant-card__title">Оплачивать иностранные товары, услуги и сервисы</div>
+            <div class="garant-card__description">С иностранной банковской картой вы сможете пользоваться всеми
+              возможностями международных платёжных систем: совершать покупки в зарубежных магазинах, оплачивать
+              заграничные приложения, подписки, сервисы и многое другое</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Баннер -->
+  <div class="banner">
+    <p>ПОЛУЧИТЬ</p>
+    <p>ВСЕ ПРЕИМУЩЕСТВА</p>
+    <p><b style="color: #d3ed64;">ИНОСТРАННОЙ</b> БАНКОВСКОЙ</p>
+    <p>КАРТЫ</p>
+    <button>Оформить свою Visa/Mastercard</button>
+  </div>
+
+  <!-- Преимушество -->
+  <div class="advantage">
+    <div class="advantage-title__section">
+      <p>ПОЧЕМУ <b style="color: #d3ed64;">ВЫБИРАЮТ</b></p>
+      <p>ИМЕННО НАС</p>
+    </div>
+    <div class="advantage-cards">
+      <div class="row1">
+        <div class="advantage-classic__card">
+          <div class="advantage-classic__card__number">1</div>
+          <p class="advantage-classic__card__title">Поддержка на<br> всех этапах</p>
+          <p class="advantage-classic__card__description">В процессе получения банковской карты консультируем и
+            оперативно отвечаем на все ваши вопросы</p>
+        </div>
+
+        <div class="advantage-classic__card">
+          <div class="advantage-classic__card__number">2</div>
+          <p class="advantage-classic__card__title">Персональный<br> менеджер</p>
+          <p class="advantage-classic__card__description">В процессе получения банковской карты консультируем и
+            оперативно отвечаем на все ваши вопросы</p>
+        </div>
+        <div class="advantage-image__card">
+          <img src="./images/service1.svg" alt="">
+        </div>
+      </div>
+      <div class="row2">
+        <div class="advantage-image__card">
+          <img src="./images/service1.svg" alt="">
+        </div>
+        <div class="advantage-classic__card">
+          <div class="advantage-classic__card__number">3</div>
+          <p class="advantage-classic__card__title">Безопасная сделка и гарантия 100%</p>
+          <p class="advantage-classic__card__description">Всё официально и надёжно: мы работаем по договору через
+            юридическое лицо и оформляем карту только после получения заверенной доверенности от вас.</p>
+        </div>
+      </div>
+      <div class="row3">
+        <div class="advantage-classic__card">
+          <div class="advantage-classic__card__number">4</div>
+          <p class="advantage-classic__card__title">Поддержка всех этапах</p>
+          <p class="advantage-classic__card__description">В процессе получения банковской карты консультируем и
+            оперативно отвечаем на все ваши вопросы</p>
+        </div>
+
+        <div class="advantage-classic__card">
+          <div class="advantage-classic__card__number">5</div>
+          <p class="advantage-classic__card__title">Поддержка всех этапах</p>
+          <p class="advantage-classic__card__description">В процессе получения банковской карты консультируем и
+            оперативно отвечаем на все ваши вопросы</p>
+        </div>
+        <div class="advantage-image__card">
+          <img src="./images/service4.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Цены -->
+  <div id="prices" class="prices">
+    <div class="row gx-lg-5 gx-3 gy-3 gy-3">
+      <div class="col-lg-6 order-lg-1">
+        <p class="garant-title__title" style="margin-bottom: 50px;">ВЫБЕРИТЕ <b style="color: #d3ed64;">ПАКЕТ</b></p>
+        <div class="card price-card">
+          <div class="price-card__header">
+            <div class="price-card__header__title">
+              <div class="number">1</div>
+              <div class="title">Банк</div>
+            </div>
+            <div class="price-card__header__countries">
+              <div id="c1">Казахстан</div>
+              <div id="c2">Россия</div>
+              <div id="c3">Узбекистан</div>
+            </div>
+          </div>
+          <ul class="price-card__opportunity">
+            <li>Открытие удаленное</li>
+            <li>Открытие брокерского счета в России</li>
+            <li>Открытие брокерского счета в Казахстане</li>
+          </ul>
+          <div class="row price-card__description">
+            <div class="col-8 column1">
+              <p>Доставка карты в любой город России:</p>
+              <p>Открытие брокерского счета в России:</p>
+              <p>Открытие брокерского счета в Казахстане:</p>
+            </div>
+            <div class="col-4 column2">
+              <p>15 рабочих дней</p>
+              <p>1 день</p>
+              <p>1 день</p>
+            </div>
+          </div>
+          <div class="hidden-bg2"></div>
+          <div class="price-card__footer">
+            <div class="price-card__footer__url">
+              <a href="">Хочу получить карту</a>
+              <span class="price-strelka">&#8594;</span>
+            </div>
+            <span class="price-card__footer__price">9999 &#8381;</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-1" >
+        <div class="sale-card">
+          <p class="sale-card__title">Скидка 20%</p>
+          <img src="./images/Vector_10.svg" alt="">
+          <p class="sale-card__description">При оформлении второй <br>карты</p>
+        </div>
+        <div class="card price-card" id="price-column2">
+          <div class="price-card__header mb-5">
+            <div class="price-card__header__title">
+              <div class="number">2</div>
+              <div class="title">Брокер</div>
+            </div>
+            <div class="price-card__header__countries">
+              <div id="c1">Казахстан</div>
+            </div>
+          </div>
+          <ul class="price-card__opportunity">
+            <li>Открытие удаленное</li>
+            <li>Открытие брокерского счета в России</li>
+            <li>Открытие брокерского счета в Казахстане</li>
+            <li>Открытие брокерского счета в Англии</li>
+          </ul>
+          <div class="row price-card__description">
+            <div class="col-8 column1">
+              <p>Доставка карты в любой город России:</p>
+              <p>Открытие брокерского счета в России:</p>
+              <p>Открытие брокерского счета в Казахстане:</p>
+            </div>
+            <div class="col-4 column2">
+              <p>15 рабочих дней</p>
+              <p>1 день</p>
+              <p>1 день</p>
+            </div>
+          </div>
+          <div class="hidden-bg1"></div>
+          <div class="price-card__footer">
+            <div class="price-card__footer__url">
+              <a href="">Хочу получить карту</a>
+              <span class="price-strelka">&#8594;</span>
+            </div>
+            <span class="price-card__footer__price">9999 &#8381;</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="footer">
+    <div class="up">
+      <div class="up-contact">
+        <div class="up-contact__up">
+          <div class="up-contact__up__phone">+7 495 133 02 76</div>
+          <div class="up-contact__up__social">
+            <div id="social1">Telegram</div>
+            <div id="social2">WhatsApp</div>
+            <div id="social3">VK</div>
+          </div>
+        </div>
+        <div class="up-contact__down">HI@FINNUM.RU</div>
+      </div>
+      <div class="up-image">
+        <img src="./images/retro_phone_flying.png" alt="">
+      </div>
+      <div class="up-menu">
+        <a href="">Для кого</a>
+        <a href="">Возможности</a>
+        <a href="">Услуги</a>
+        <a href="">Visa 3D</a>
+      </div>
+    </div>
+    <hr class="split">
+    <div class="down">
+      <div>Все права защищены Finnum 2022 ©</div>
+      <div class="down-center">
+        <a href="">Политика конфиденциальности</a>
+        <a href="">Оферта</a>
+      </div>
+      <div class="down-logo">LOGO</div>
+    </div>
+  </div>
+
+
+    <!-- Modal Order section -->
+  <div class="modal fade" id="orderModal" aria-hidden="true" aria-labelledby="orderLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Оставить заявку</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="modal__title">ПОЛУЧИТЬ <b style="color: #d3ed64;">МЕЖДУНАРОДНУЮ</b> КАРТУ</p>
+          <p class="modal__description">Оставьте свои контакты и мы свяжемся с вами в тот же день</p>
+          <div class="box">
+            <form method="post" name="orderForm">
+              <div class="container">
+                <div class="form-group floating-label">
+                  <input required type="text" class="form-control">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Ваше имя</label>
+                </div>
+
+                <div class="form-group floating-label">
+                  <input required name="phone" id="phone" type="text" class="form-control">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Телефон</label>
+                </div>
+
+                <div class="form-group floating-label">
+                  <input type="text" class="form-control">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Введите ваш промокод</label>
+                </div>
+
+                <div style="width: 100%;" class="select">
+                  <select class="select-text" required>
+                    <option value="" disabled selected></option>
+                    <option value="1">Whatsapp</option>
+                    <option value="2">Телеграм</option>
+                    <option value="3">Инстаграм</option>
+                  </select>
+                  <span class="select-highlight"></span>
+                  <span class="select-bar"></span>
+                  <label class="select-label">Приоритетный способ связи</label>
+                </div>
+
+                <div style="margin-top: 50px;" class="submit-btn">
+                  <input style="width: 100%; margin-bottom: 0;" type="submit" value="Отправить">
+                </div>
+                <p class="modal-feedback">Отправляя данные я соглашаюсь с <a href="#">Политикой конфиденциальности</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Question Section -->
+  <div class="modal fade" id="questionModal" aria-hidden="true" tabindex="-1" aria-labelledby="staticBackdropLabel">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Задать вопрос</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="modal__title">Задайте <b style="color: #d3ed64;">свой</b> вопрос</p>
+          <p class="modal__description">Оставьте свои контакты и мы свяжемся с вами в тот же день</p>
+          <div class="box">
+            <form method="post" name="questionForm">
+              <div class="container">
+                <div class="form-group floating-label">
+                  <input required type="text" class="form-control">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Ваше имя</label>
+                </div>
+
+                <div class="form-group floating-label">
+                  <input required name="phone" id="phone" type="text" class="form-control">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Телефон</label>
+                </div>
+
+                <div class="form-group floating-label">
+                  <input type="email" class="form-control">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Email</label>
+                </div>
+                <div class="form-group floating-label">
+                  <textarea name="question" class="form-control"></textarea>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Ваш вопрос</label>
+                </div>
+                <div style="margin-top: 50px;" class="submit-btn">
+                  <input style="width: 100%; margin-bottom: 0;" type="submit" value="Отправить">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <script src="js/validate.js"></script>
+  <script src="./js/navbar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous"></script>
+  <script src="js/animated-text.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="./js/scroll.js"></script>
+</body>
+
+</html>

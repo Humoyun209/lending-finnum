@@ -1,0 +1,282 @@
+header {
+  -webkit-box-shadow: 0px 15px 10px -15px #e7dede;
+          box-shadow: 0px 15px 10px -15px #e7dede;
+}
+header .nav {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 20px 30px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fafafa;
+}
+
+.nav__logo {
+  font-size: 25px;
+  font-weight: 600;
+  z-index: 999;
+}
+
+.nav__button {
+  background-color: #fb6363;
+  color: #ededed;
+  border-radius: 30px;
+  border-color: transparent;
+  font-weight: 500;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.nav__button:hover {
+  background-color: #ed5656;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button2 {
+  background-color: #fb6363;
+  color: #ededed;
+  border-radius: 30px;
+  border-color: transparent;
+  font-weight: 500;
+  font-size: 22px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.open-main-nav, .main-nav, .mobile-menu, .vbp-header-menu-button__svg {
+  display: none;
+}
+
+div.stroke {
+  margin: 0 auto;
+}
+
+div.stroke ul {
+  list-style: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  margin: 0;
+}
+
+div.stroke ul li {
+  vertical-align: middle;
+}
+
+div.stroke ul li a {
+  padding: 5px 0px;
+  text-decoration: none;
+  color: #313743;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+div.stroke ul li a,
+div.stroke ul li a:after,
+div.stroke ul li a:before {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+div.stroke ul li a:hover {
+  color: #bad649;
+}
+
+div.stroke ul li a {
+  position: relative;
+}
+
+div.stroke ul li a:after,
+div.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #bad649;
+  height: 1px;
+}
+
+div.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+.vbp-header-menu-button__svg {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+  z-index: 999;
+}
+
+.vbp-header-menu-button__svg line {
+  stroke: #192a6b;
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 0%;
+  -webkit-transition: stroke-dashoffset 0.4s, -webkit-transform 0.3s;
+  transition: stroke-dashoffset 0.4s, -webkit-transform 0.3s;
+  transition: transform 0.3s, stroke-dashoffset 0.4s;
+  transition: transform 0.3s, stroke-dashoffset 0.4s, -webkit-transform 0.3s;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  stroke-width: 3px;
+}
+
+.vbp-header-menu-button__svg .top {
+  transform: translateY(-35%);
+  -webkit-transform: translateY(-35%);
+  -moz-transform: translateY(35%);
+  -ms-transform: translateY(35%);
+  -o-transform: translateY(35%);
+}
+
+.vbp-header-menu-button__svg .middle {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: opacity 0.3s, transform 0.3s;
+  -moz-transition: opacity 0.3s, transform 0.3s;
+  -ms-transition: opacity 0.3s, transform 0.3s;
+  -o-transition: opacity 0.3s, transform 0.3s;
+}
+
+.vbp-header-menu-button__svg .bottom {
+  transform: translateY(33%);
+  -webkit-transform: translateY(33%);
+  -moz-transform: translateY(33%);
+  -ms-transform: translateY(33%);
+  -o-transform: translateY(33%);
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 9px;
+}
+
+.vbp-header-menu-button__svg:hover .bottom {
+  stroke-dashoffset: 0%;
+}
+
+/*** Mode Croix ***/
+body.menu-open .vbp-header-menu-button__svg .top {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  stroke-linecap: round;
+}
+
+body.menu-open .vbp-header-menu-button__svg .middle {
+  transform: scaleX(0.1);
+  -webkit-transform: scaleX(0.1);
+  -moz-transform: scaleX(0.1);
+  -ms-transform: scaleX(0.1);
+  -o-transform: scaleX(0.1);
+  opacity: 0;
+}
+
+body.menu-open .vbp-header-menu-button__svg line.bottom {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  stroke-linecap: round;
+  color: white;
+}
+
+body.menu-open .vbp-header-menu-button__svg .bottom {
+  stroke-dashoffset: 0%;
+}
+
+@-webkit-keyframes burgerAnimate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes burgerAnimate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .nav {
+    padding: 10px 20px;
+  }
+  div.stroke ul {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  div.stroke, .nav__button {
+    display: none;
+  }
+  .vbp-header-menu-button__svg {
+    display: block;
+  }
+  .mobile-menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d3ed64;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+    z-index: 98;
+    -webkit-animation: burgerAnimate 0.7s;
+            animation: burgerAnimate 0.7s;
+  }
+  .mobile-menu a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    color: #313743;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+}

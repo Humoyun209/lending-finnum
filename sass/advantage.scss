@@ -1,0 +1,118 @@
+@import 'variables';
+
+
+.advantage-title__section p {
+    color: $black;
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.advantage {
+    max-width: 1200px;
+    margin: 0px auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.advantage-cards {
+    margin-top: 100px;
+}
+
+.row1, .row2, .row3 {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: no-wrap;
+}
+
+.advantage-classic__card {
+    padding: 30px 100px 50px 40px;
+    background-color: $black;
+    border-radius: 30px;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0px 0px 20px 0px rgba(49,55,67,0.1);
+    transition-duration: .5s;
+
+    &__number {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $white;
+        color: $black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &__title {
+        color: #ffffff;
+        font-size: 30px;
+        line-height: 1.4;
+        font-weight: 500;
+    }
+
+    &__description {
+        color: $white;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+
+.advantage-image__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $black;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(49,55,67,0.1);
+    transition-duration: .5s;
+    & img {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .row1, .row2, .row3 {
+        flex-wrap: wrap;
+    }
+
+    .advantage {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 100px;
+    }
+    .advantage-image__card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .advantage-title__section p {
+        font-size: 35px;
+    }
+}
+
+
+.advantage-classic__card:hover {
+    background-color: #550055;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#background-svg path{
+    transition: stroke 0.5s ease;
+    stroke: transparent;
+}
+
+  
+#background-svg:hover {
+    fill: #D3ED64;
+}
